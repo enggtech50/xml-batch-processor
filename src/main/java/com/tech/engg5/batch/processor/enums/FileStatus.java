@@ -1,0 +1,9 @@
+package com.tech.engg5.batch.processor.enums;
+
+public enum FileStatus {
+  IN_PROGRESS,
+  SAVE_RECORDS_COMPLETED,
+  SAVE_RECORDS_FAILED,
+  FILE_PROCESSING_COMPLETED_ALL_RECORDS,
+  FILE_REPROCESSING_COMPLETED_FAILED_RECORDS;
+}
