@@ -1,0 +1,22 @@
+book-batch-processor:
+  runner:
+    cron-schedule: 0 0/5 * * * *
+  file-reprocess-runner:
+    cron-schedule: 0 45 1-23/2 * * *
+    disabled: true
+  record-reprocess-runner:
+    cron-schedule: 0 45 0-22/2 * * *
+    disabled: true
+  sft:
+    hostName: test.rebex.net
+    userName: BOOKALERTTST
+    secretKey: 'ENTER SECRET KEY'
+  s3:
+    endpoint: https://s3-app-qa-techh.com
+    region: us-east-1
+    secretKey: 'ENTER SECRET KEY'
+    accessKey: 'ENTER ACCESS KEY'
+    disabledCertCheck: true
+    bufferSize: 50
+    socketTimeout: 240000
+    connectionTimeout: 60000
